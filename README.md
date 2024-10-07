@@ -80,24 +80,24 @@ Open the [link starting with 127.0...](http://127.0.0.1:8888) shown in the termi
 
 #### 1. **Navigating the Interface**
 
-1. **File Browser**: Located on the left sidebar, it lets you browse, open, and manage files and directories.
+   * **File Browser**: Located on the left sidebar, it lets you browse, open, and manage files and directories.
    
-2. **Launcher**: The Launcher tab, accessible from the left sidebar or by clicking the "+" icon in the file browser, allows you to create new notebooks, text files, terminals, and other documents.
+   * **Launcher**: The Launcher tab, accessible from the left sidebar or by clicking the "+" icon in the file browser, allows you to create new notebooks, text files, terminals, and other documents.
 
-3. **Tabs and Panels**: JupyterLab uses a tabbed interface. Opened files and terminals appear as tabs in the main work area. You can arrange these tabs side-by-side or in a grid.
+   * **Tabs and Panels**: JupyterLab uses a tabbed interface. Opened files and terminals appear as tabs in the main work area. You can arrange these tabs side-by-side or in a grid.
 
 #### 2. **Using Terminals**
 
-1. **Open a Terminal**:
+ **Open a Terminal**:
    - From the Launcher, click the Terminal icon under the Other section.
    - A terminal window will open in a new tab, allowing you to run shell commands.
 
 #### 3. **Saving and Exporting Work**
 
-1. **Save**: JupyterLab automatically saves your work, but you can manually save it by clicking the save icon or pressing `Ctrl + S`.
+   * **Save**: JupyterLab automatically saves your work, but you can manually save it by clicking the save icon or pressing `Ctrl + S`.
 
-2. **Synced Folders**: JupyterLab runs in a Docker container and therefore, files saved in JupyterLab will **not be persistent**. Only save files in **/app/** and **/catkin_ws/src**, since these folders are synchronised with *./app* and *./src* in the workspace folder.
+   * **Synced Folders**: JupyterLab runs in a Docker container and therefore, files saved in JupyterLab will **not be persistent**. Only save files in **/app/** and **/catkin_ws/src**, since these folders are synchronised with *./app* and *./src* in the workspace folder.
 
-#### 4. **Shutting Down JupyterLab**
+#### 4. **Shutting Down the Workspace**
 
-1. **Ctrl+D** in the terminal where the container has originally been started exits the workspace.
+**Ctrl+D** in the terminal where the container has originally been started exits the workspace.
