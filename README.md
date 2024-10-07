@@ -66,6 +66,10 @@ docker run hello-world
 * **Dockerfile.remote**
    Final Dockerfile used to locally install required packages missing from the image prebuilt in the cloud. Modify this Dockerfile to install further software in the container.
 
+### Setting the Graphics Architecture
+
+I could not get [Nvidia's Tiny Cuda NN (link)](https://github.com/NVlabs/tiny-cuda-nn) to reliably build with graphics architecture auto-detection turned on. Therefore, `TCNN_CUDA_ARCHITECTURES` is set manually in *Dockerfile.remote*. **If you use a GPU not from Nvidia's 40-series, change this environment variable as shown in the [Nerfstudio documentation (link)](https://docs.nerf.studio/quickstart/installation.html#tiny-cuda-arch-list).**
+
 ### Run Workspace
 
 Unzip the workspace and navigate to the root of ros_ml_container. Run the following command to start the container.
